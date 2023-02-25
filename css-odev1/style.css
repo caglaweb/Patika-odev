@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap');
+:root{
+    --gray: #5c6a79;
+    --black:rgb(21, 20, 20);
+    --light: rgb(118, 118, 118);
+    --orange: #ff5e2c;
+    --border: 0.1rem solid rgba(225,225,225,0.4);
+    }
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+  }
+
+body{
+    background: rgb(21, 20, 20);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+ }
+
+ html::-webkit-scrollbar{
+   width: 0.8rem;
+   background-color:var(--bg-color);
+ }
+
+ html::-webkit-scrollbar-thumb{
+   border-radius: 3rem;
+   background-color: #fff;
+ }
+ a{
+    text-decoration: none;
+ }
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.75rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--orange);
+    cursor: pointer;
+ }
+h4,h5{
+    color: var(--gray);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.title{
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 1.7rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    z-index: 1000;
+ }
+
+ .header .navbar a{
+    padding-top: 10px;
+    margin: 0 1rem;
+    font-size: 1rem;
+    color:var(--black);
+    align-content: center;
+ }
+
+ .header .navbar .active,
+ .header .navbar a:hover{
+    color: var(--orange);
+ }
+
+/*=============== CARD ===============*/
+
+ .container{
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.4rem;
+  }
+  
+  .card{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    background: whitesmoke;
+    border-radius: 1rem 1rem 11rem 11rem;
+    padding: 2.5rem 1.5rem 3.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px hsla(20, 13%, 91%, 0.572);
+    margin-bottom: 10rem;
+  }
+  
+  .card__img{
+    height:15rem;
+  }
+  
+  .card__perfil{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .card__name{
+    color: var(--bg-color);
+  }
+  .card__profession{
+    color: var(--white);
+    font-weight: 200;
+  }
+  
+  .card__name{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card__profession{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+.about .box{
+    height: 300px;
+    width: 500px;
+    background: var(--gray);
+    padding: 2.5rem 1.5rem 3.5rem;
+    border-radius: 1rem;
+}
+
+.about .box:hover{
+    box-shadow: 0 8px 32px hsla(20, 13%, 91%, 0.572);
+}
+
+.about .box h3{
+    color: var(--bg-color);
+    font-size: 1.5rem;
+}
+ 
+ .contact .map{
+    flex: 25rem;
+    width: 80%;
+    object-fit: cover;
+ }
+ 
+ .contact form{
+    flex: 1 1 20rem;
+    padding: 5rem 2rem;
+ }
+ 
+ .contact  form h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+ }
+ 
+ .contact  form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+ }
+ 
+ .contact  form .inputBox i{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+ }
+ 
+ .contact  form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+ }

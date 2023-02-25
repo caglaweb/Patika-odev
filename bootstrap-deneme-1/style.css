@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  #E9ECEF;
+}
+
+.fullh{
+      height: 100%;
+}
+.specificfontproperties1{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #d6c618;
+}
+.listcenter{
+    
+    list-style-position: inside;
+
+}
+.h-100{
+    height: 100px;
+}
+.hrnew {
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 5px;
+  }
