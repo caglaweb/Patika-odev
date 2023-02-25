@@ -1,0 +1,2 @@
+# Patika-odev
+ Patika Ödevleri
